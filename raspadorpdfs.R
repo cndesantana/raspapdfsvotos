@@ -5,7 +5,7 @@ library(openxlsx)
 library(reshape)
 
 
-setwd("/Users/isiscosta/Downloads/Personales/DataSCOUT/Sheridan/data/votos_vereadores/Candidatos a vereador Datapedia/")
+setwd("~/votos_vereadores/Candidatos a vereador Datapedia/")
 
 pdffiles = system("ls *.pdf",intern=TRUE)
 alldata = data.frame()
@@ -43,7 +43,7 @@ for(location in pdffiles){
 }
 data_vereador <- alldata
 
-setwd("/Users/isiscosta/Downloads/Personales/DataSCOUT/Sheridan/data/votos_vereadores/Candidatos a deputado e senador Datapedia//")
+setwd("~/votos_vereadores/Candidatos a deputado e senador Datapedia//")
 
 pdffiles = system("ls *.pdf",intern=TRUE)
 alldata = data.frame()
